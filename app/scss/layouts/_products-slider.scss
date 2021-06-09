@@ -1,0 +1,69 @@
+.products-slider {
+    font-size: .625rem;
+    margin: 12em 0 10em 0;
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: $font-size-md;
+        letter-spacing: .25rem;
+        position: relative;
+        display: flex;
+        margin-bottom: 1.2rem;
+        font-weight: 500;
+        div{
+            flex-shrink: 0;
+            padding: 0 1.7rem;
+        }
+        &:before,
+        &:after{
+            position: relative;
+            content: '';
+            display: block;
+            height: 5px;
+            background-color: $accent;
+            width: 100%;
+            top: 15px
+        }
+    }
+    &__items {
+        display: flex;
+        transition: all .3s;
+        position: relative;
+        left: 0px;
+    }
+    &__main {
+        position: relative;
+        overflow-x: hidden;
+    }
+    &__arrow{
+        position: absolute;
+        &--left{
+            color: $accent;
+            font-size: 4rem;
+            cursor: pointer;
+            height: 100%;
+            z-index: 2;
+            left: 0;
+            top: 0;
+            display: flex;
+            align-items: center;
+            @include media-breakpoint-down(sm){
+                font-size: 3rem;
+            }
+        }
+        &--right{
+            color: $accent;
+            font-size: 4rem;
+            cursor: pointer;
+            height: 100%;
+            z-index: 2;
+            right: 0;
+            top: 0;
+            display: flex;
+            align-items: center;
+            @include media-breakpoint-down(sm){
+                font-size: 3rem;
+            }
+        }
+    }
+}

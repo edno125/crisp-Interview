@@ -1,0 +1,14 @@
+.indicator{
+    &__icon{
+        @include toRem(margin-left, 36);
+        @include media-breakpoint-down(lg){
+            @include toRem(margin-left, 32);
+        }
+    }
+    &.burger-toggle{
+        display: block !important;
+        @include media-breakpoint-up(lg){
+            display: none!important;
+        }
+    }
+}

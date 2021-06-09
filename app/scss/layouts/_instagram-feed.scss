@@ -1,0 +1,102 @@
+.insta-feed {
+    position: relative;
+    &__col{
+        padding: .625rem;
+        width: 16.6666666666%;
+        @include media-breakpoint-down(xl){
+            width: 25%;
+        }
+        @include media-breakpoint-down(lg){
+            width: 33.33%;
+        }
+    }
+    &__row{
+        display: flex;
+        flex-wrap: wrap;
+        //margin: 0 -0.625rem;
+    }
+    &__card {
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            transition: all .3s;
+            opacity: 0;
+        }
+        &:hover::after{
+          background-color: $accent;
+          opacity: .8;
+        }
+        &:hover .insta-feed__content{
+            opacity: 1;
+        }
+    }
+    &__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%,-50%);
+        z-index: 3;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        opacity: 0;
+    }
+    &__hashtag {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        text-transform: uppercase;
+        background: $accent;
+        padding: 0 3.6rem;
+        z-index: 10;
+        font-size: $font-size-lg;
+        line-height: 4rem;
+    }
+    &__image {
+        width: 100%;
+    }
+    &__link {
+        position: relative;
+        color: $white;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: flex;
+        margin: 0 auto;
+        &--hoverable{
+            &::after{
+                content: '';
+                position: absolute;
+                width: 0;
+                left: 0;
+                @include toRem(bottom, -4);
+                @include toRem(height, 2);
+                background: $white;
+                transition: all .3s;
+            }
+            &:hover::after{
+                width: 100%;
+            }
+            i{
+                position: relative;
+                top: 5px;
+                left: 5px;
+            }
+            @include media-breakpoint-down(lg){
+                display: none;
+            }
+        }
+        .fab{
+            @include media-breakpoint-down(lg){
+                font-size: 2rem;
+            }
+        }
+    }
+}

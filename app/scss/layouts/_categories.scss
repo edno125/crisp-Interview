@@ -1,0 +1,14 @@
+.categories {
+    &__row{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -0.625rem;
+    }
+    &__col{
+        padding: .625rem;
+        width: 33.33%;
+        @include media-breakpoint-down(lg){
+            width: 50%;
+        }
+    }
+}

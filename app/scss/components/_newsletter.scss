@@ -1,0 +1,93 @@
+.newsletter {
+    &__btn {
+        background: none;
+        text-transform: uppercase;
+        border: none;
+        padding: 0;
+    }
+    &__checkbox {
+        border: none
+    }
+    &__form {
+      @include media-breakpoint-down(lg){
+        width: 300px;
+        margin: 0 auto;
+      }
+    }
+    &__input {
+        border: none;
+        width: 100%;
+        height: 2.8rem;
+        padding: 0 1rem;
+        margin-bottom: .5rem;
+    }
+    &__label {
+        font-size: $font-size-xs;
+        vertical-align: bottom;
+    }
+    &__title {
+        margin-bottom: .5rem;
+    }
+}
+
+/* Customize the label (the container) */
+.newsletter__label {
+    display: block;
+    position: relative;
+    padding-left: 1.2rem;
+    margin-bottom: .5rem;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .newsletter__label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: $white;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .newsletter__label:hover input ~ .checkmark {
+    background-color: $white;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .newsletter__label input:checked ~ .checkmark {
+    background-color: $primary;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .newsletter__label input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .newsletter__label .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }

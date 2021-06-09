@@ -1,0 +1,35 @@
+.secondary-nav {
+    @include toRem(padding-top, 28);
+}
+.secondary {
+    &__item {
+        padding-right: 3.5rem;
+        @include media-breakpoint-down(xl){
+            padding-right: 2.5rem;
+        }
+        @include media-breakpoint-down(lg){
+            padding-right: 0;
+            margin: .5rem 0;
+        }
+    }
+    &__link {
+        color: $primary;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: .08rem;
+        @include media-breakpoint-down(xl){
+            font-size: .8rem
+        }
+    }
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 0;
+        @include media-breakpoint-down(lg){
+            flex-direction: column;
+        }
+    }
+}

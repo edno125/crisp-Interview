@@ -1,0 +1,43 @@
+.footer{
+    background-color: $accent;
+    margin-top: 3rem;
+    padding: 2rem 0 5rem 0;
+    @include media-breakpoint-down(lg){
+        padding: 3rem 0;
+    }
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__left{
+        align-self: flex-end;
+        @include media-breakpoint-down(lg){
+            width: 100%;
+            text-align: center;
+        }
+    }
+    &__right{
+        width: 33.33%;
+        @include media-breakpoint-down(lg){
+            width: 100%;
+            margin-top: 2rem;
+            text-align: center;
+        }        
+    }
+    &__logo{
+        &-wrap{
+            @include toRem(height, 35);
+            img{
+                max-height: 100%;
+                width: auto;
+                max-width: 100%;
+                display: inline-block;
+            }
+        }
+    }
+    .secondary-nav{
+        margin-top: 1.4rem
+    }
+}

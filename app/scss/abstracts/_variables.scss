@@ -1,0 +1,79 @@
+// Color system
+$primary:       #000000;
+$secondary:     #999999;
+$accent:        #E0FF04;
+$white:         #ffffff;
+$light:         #F6F6F6;
+$light-icon:    #BBBBBB;
+
+
+// Grid breakpoints
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+  );
+
+// container-max-widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1636px //old 1320
+);
+
+$container-max-width: 1636px; // For fluid
+
+$container-padding-x: .625rem;
+
+// Grid columns
+$grid-gutter-width: 1.25rem;
+
+
+
+// Typography
+
+$font-family-base: 'Work Sans', sans-serif;
+
+$font-size-root:   null;
+$font-size-base:   1rem; // Assumes the browser default, typically `16px`
+
+$font-size-xs:     $font-size-base * .75 !default; // 12px
+$font-size-sm:     $font-size-base * .875 !default; // 14px
+$font-size-md:     $font-size-base * 1.375 !default; // 22px
+$font-size-lg:     $font-size-base * 2.9375 !default; // 47px
+
+$line-height-base: 1.625 !default;
+$line-height-sm:   1.375 !default;
+
+$letter-spacing-base: .08rem;
+
+//Headings
+$h1-font-size: null;
+$h2-font-size: null;
+$h3-font-size: null;
+$h4-font-size: null;
+$h5-font-size: null;
+$h6-font-size: null;
+
+$headings-margin-bottom:    null;
+$headings-margin-bottom:    null;
+$headings-font-style:       null;
+$headings-font-weight:      null;
+$headings-line-height:      null;
+
+//Paragraph
+$paragraph-margin-bottom: null;
+
+//Table
+$dt-font-weight: null;
+
+//Links
+$link-color: null;
+$link-decoration: null;
+$link-hover-color: null;
+$link-hover-decoration: null;

@@ -1,0 +1,73 @@
+.category-card {
+  position: relative;
+  color: $white;
+  text-align: center;
+  &::after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: $primary;
+      opacity: .2;
+      z-index: 1;
+      transition: all .3s;
+  }
+  &:hover::after{
+    background-color: $accent;
+    opacity: .8;
+  }
+  &:hover &__button::after{
+    width: 98%;
+  }
+  &__button {
+      position: relative;
+      &::after{
+          content: '';
+          position: absolute;
+          width: 0;
+          left: 0;
+          @include toRem(bottom, -8);
+          @include toRem(height, 2);
+          background: $white;
+          transition: all .3s;
+      }
+      @include media-breakpoint-down(sm){
+        display: none;
+      }
+  }
+  &__image {
+    background-color: none;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+  }
+  &__link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+  }
+  &__content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+  }
+  &__name {
+    font-size: $font-size-lg;
+    letter-spacing: .2em;
+    line-height: .8em;
+    @include media-breakpoint-down(xxl){
+      font-size: 3vw;
+    }
+    @include media-breakpoint-down(sm){
+      font-size: 5vw;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    font-size: $font-size-base;
+    max-width: 25rem;
+    &__brand a{
+        color: $secondary;
+        text-decoration: none;
+    }
+    &__name a{
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $primary;
+    }
+    &__button {
+        background: none;
+        text-transform: upper;
+        border: none;
+        position: relative;
+        letter-spacing: 0.1rem;
+        padding: 0;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            left: 0;
+            @include toRem(bottom, 0);
+            @include toRem(height, 2);
+            background: $accent;
+        }
+    }
+    &__image {
+        font-size: .625rem;
+        position: relative;
+        height: 41em;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 100%;            
+        }
+    }
+    &__white-list {
+        color: $light-icon;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-size: $font-size-sm;
+    }
+    &__info {
+    }
+    &__price {
+    }
+
+}

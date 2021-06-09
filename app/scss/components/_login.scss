@@ -1,0 +1,15 @@
+.login{
+    &__link{
+        color: $primary;
+        font-size: $font-size-xs;
+        text-decoration: none;
+        letter-spacing: .06rem;
+    }
+    span{
+        padding: 0 .7rem;
+        font-size: $font-size-xs;
+    }
+    @include media-breakpoint-down(lg){
+        margin: 3rem 0;
+    }
+}

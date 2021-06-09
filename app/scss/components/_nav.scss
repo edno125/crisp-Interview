@@ -1,0 +1,32 @@
+.main-nav{
+    @include toRem(padding-top, 28);
+    @include toRem(padding-bottom, 28);
+    width: 100%;
+    &__list{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 0;
+        @include media-breakpoint-down(xl){
+            width: 100%;
+        }
+        @include media-breakpoint-down(lg){
+            flex-direction: column;
+        }
+    }
+    &__item {
+        padding: 0 .625rem;
+        @include media-breakpoint-down(lg){
+            padding: .8rem .625rem;
+        }
+    }
+    &__link{
+        color: $primary;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: .08rem;
+    }
+}

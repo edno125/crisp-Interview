@@ -1,0 +1,29 @@
+.search{
+    position: relative;
+    min-width: 14rem;
+    &__input{
+        border: none;
+        border-bottom: 1px solid $primary;
+        &:focus + .search__button,
+        &:active + .search__button{
+            opacity: 0;
+            z-index: -1;
+        }
+        @include media-breakpoint-down(lg){
+           width: 100%;
+        }
+    }
+    &__button{
+        background: none;
+        border: none;
+        position: absolute;
+        left: 0;
+        bottom: 3px;
+        background: #fff;
+        transition: all .3s;
+    }
+    @include media-breakpoint-down(lg){
+        max-width: 250px;
+        margin: 0 auto;
+    }
+}

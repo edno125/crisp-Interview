@@ -1,0 +1,17 @@
+@charset 'utf-8';
+
+// Vendor
+// Our project doesn't consist of any library
+// @import "vendor/index";
+
+//Abstracts
+@import "abstracts/index";
+
+//Base Styles
+@import "base/index";
+
+//Components
+@import "components/index";
+
+//Layout
+@import "layouts/index";

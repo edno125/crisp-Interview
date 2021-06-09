@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Koibird</title>
+	<meta name="description" content="Koibird Template">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/dist/preview.jpg">
+	
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="https://kit.fontawesome.com/ed0a63bcdb.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<header class="header container">
+    
+    <div class="header__search">
+        <form class="search">
+            <input class="search__input" type="search" placeholder="">
+            <button class="search__button" type="submit">
+                <svg class="search__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <path id="SEARCH_ICON" data-name="SEARCH ICON" d="M19.848,19.113l-5.691-5.461a7.683,7.683,0,0,0,2.49-5.666A8.217,8.217,0,0,0,8.323,0,8.126,8.126,0,0,0,0,7.986a8.126,8.126,0,0,0,8.323,7.986,8.327,8.327,0,0,0,4.98-1.638l5.762,5.529a.532.532,0,0,0,.711,0A.475.475,0,0,0,19.848,19.113ZM1.067,7.986A7.144,7.144,0,0,1,8.323,1.024,7.144,7.144,0,0,1,15.58,7.986a7.144,7.144,0,0,1-7.256,6.962A7.189,7.189,0,0,1,1.067,7.986Z" fill="#231f20"/>
+                </svg>
+            </button>
+        </form>
+    </div>
+
+    <div class="header__logo-wrap">
+        <a class="header__logo" href="/">
+            <img class="logo" src="./images/logo.svg" alt="Brand Logo">
+        </a>
+    </div>
+
+    <div class="header__indicators">
+
+        <div class="header__login">
+            <div class="login">
+                <a href="#" class="login__link">Register</a><span>|</span><a href="#" class="login__link">My Account</a>
+            </div>
+        </div>
+
+        <a class="indicator" href="#">
+            <svg class="indicator__icon" xmlns="http://www.w3.org/2000/svg" width="24.082" height="19.27" viewBox="0 0 24.082 19.27">
+                <path d="M11.964,17.952c.614-.46,1.227-.92,1.917-1.38,3.758-2.608,8.82-6.212,8.82-9.817a5.485,5.485,0,0,0-2.3-4.678,4.926,4.926,0,0,0-2.3-.844,4.983,4.983,0,0,0-2.377.307,5.147,5.147,0,0,0-3.144,3.835.6.6,0,0,1-.69.46.691.691,0,0,1-.46-.46A4.94,4.94,0,0,0,8.206,1.539a5.107,5.107,0,0,0-2.377-.307,4.926,4.926,0,0,0-2.3.844,5.306,5.306,0,0,0-2.3,4.678c0,3.681,5.062,7.209,8.82,9.817a20.745,20.745,0,0,1,1.917,1.38Zm2.684-.383q-1.265.92-2.3,1.611a.7.7,0,0,1-.767,0c-.614-.46-1.457-1-2.3-1.611C5.369,14.73,0,11.049,0,6.754A6.577,6.577,0,0,1,2.838,1.079a6.308,6.308,0,0,1,2.838-1A5.791,5.791,0,0,1,8.666.466a6.235,6.235,0,0,1,3.374,3.068A6.235,6.235,0,0,1,15.415.466,6.589,6.589,0,0,1,18.406.082a7.385,7.385,0,0,1,2.838,1,6.4,6.4,0,0,1,2.838,5.675C24,11.049,18.636,14.73,14.648,17.568Z" transform="translate(0 -0.023)" fill="#231f20" fill-rule="evenodd"/>
+            </svg>
+        </a>
+
+        <a class="indicator" href="#">
+            <svg class="indicator__icon" xmlns="http://www.w3.org/2000/svg" width="23.239" height="28.343" viewBox="0 0 23.239 28.343">
+                <g data-name="bag icon" transform="translate(-1740.53 -59.086)">
+                    <path id="shopping_bag" data-name="shopping bag" d="M7.838,5.468V5.377h0V5.286h0A4.106,4.106,0,0,1,8.931,2.552a4.188,4.188,0,0,1,2.734-1.185h0A4.106,4.106,0,0,1,14.4,2.461a4.188,4.188,0,0,1,1.185,2.734v.273ZM7.108,9.387a.784.784,0,0,1,.729.729.784.784,0,0,1-.729.729.784.784,0,0,1-.729-.729.671.671,0,0,1,.729-.729Zm9.113,0a.784.784,0,0,1,.729.729.729.729,0,1,1-1.458,0,.719.719,0,0,1,.729-.729Zm-.729-1.094V6.926H7.838V8.293a1.9,1.9,0,0,1,1.185,1.823A1.869,1.869,0,0,1,7.108,12.03a1.869,1.869,0,0,1-1.914-1.914A1.994,1.994,0,0,1,6.379,8.293V6.926H3.554c-.182,0-.273,0-.365.091a.473.473,0,0,0-.365.182h0l-.091.091c0,.091-.091.182-.182.273,0,.182-.091.273-.091.456l-1,17.862c0,.182,0,.273.091.365s.091.273.273.365h0a1.258,1.258,0,0,0,.365.273.548.548,0,0,0,.365.091H20.87c.182,0,.273,0,.365-.091s.273-.091.365-.273a1.258,1.258,0,0,0,.273-.365.548.548,0,0,0,.091-.365L20.87,8.02a.822.822,0,0,0-.091-.456c-.091-.091-.091-.273-.273-.365a1.258,1.258,0,0,0-.365-.273.683.683,0,0,0-.456-.091H16.86V8.2a1.9,1.9,0,0,1,1.185,1.823,1.914,1.914,0,1,1-3.828,0,2.3,2.3,0,0,1,1.276-1.732Zm1.458-2.825V5.286A5.29,5.29,0,0,0,11.665,0h-.091A5.556,5.556,0,0,0,7.838,1.549,5.474,5.474,0,0,0,6.379,5.286h0v.091h0v.091H3.554a2.7,2.7,0,0,0-.911.182,3.181,3.181,0,0,0-.82.547l-.091.091h0a3.2,3.2,0,0,0-.456.729,3.238,3.238,0,0,0-.182.911L0,25.882a2.7,2.7,0,0,0,.182.911,2.152,2.152,0,0,0,.547.82h0a2.152,2.152,0,0,0,.82.547,3.238,3.238,0,0,0,.911.182H20.779a2.7,2.7,0,0,0,.911-.182,1.984,1.984,0,0,0,.729-.456h0l.091-.091a2.152,2.152,0,0,0,.547-.82,3.238,3.238,0,0,0,.182-.911l-1-17.862a2.7,2.7,0,0,0-.182-.911,2.152,2.152,0,0,0-.547-.82h0a2.152,2.152,0,0,0-.82-.547,3.238,3.238,0,0,0-.911-.182H16.951Z" transform="translate(1740.53 59.086)" fill="#231f20" fill-rule="evenodd"/>
+                </g>
+            </svg>
+        </a>
+
+        <a class="indicator burger-toggle" href="#">
+            <svg  class="indicator__icon"  height="2rem" viewBox="0 -53 384 384" width="2.5rem" xmlns="http://www.w3.org/2000/svg">
+                <path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/>
+                <path d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/>
+                <path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/>
+            </svg>
+        </a>
+
+    </div>
+
+    <div class="header__nav">
+        <nav class="main-nav">
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">Shop by category</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="" class="main-nav__link">Shop by brand</a>
+                    <div class="main-nav__sub-megamenu">
+                        <div class="megamenu">
+                            <div class="megamenu__col">
+                                <ul class="megamenu__list">
+                                    <li class="megamenu__item"><a href="#">ANNAKIKI</a></li>
+                                    <li class="megamenu__item"><a href="#">ANNE WEST</a></li>
+                                    <li class="megamenu__item"><a href="#">BACON CLOTHING</a></li>
+                                    <li class="megamenu__item"><a href="#">BLACK CROWS</a></li>
+                                    <li class="megamenu__item"><a href="#">BLACK CROWS</a></li>
+                                    <li class="megamenu__item"><a href="#">BLACK CROWS</a></li>
+                                    <li class="megamenu__item"><a href="#">BLACK CROWS</a></li>
+                                    <li class="megamenu__item"><a href="#">BLACK CROWS</a></li>
+                                    <li class="megamenu__item"><a href="#">BLACK CROWS</a></li>
+                                </ul>
+                            </div>
+                            <div class="megamenu__col">
+                                <ul class="megamenu__list">
+                                    <li class="megamenu__item"><a href="#">ANNAKIKI</a></li>
+                                    <li class="megamenu__item"><a href="#">ANNE WEST</a></li>
+                                    <li class="megamenu__item"><a href="#">BACON CLOTHING</a></li>
+                                    <li class="megamenu__item"><a href="#">BLACK CROWS</a></li>
+                                    <li class="megamenu__item"><a href="#">BLACK CROWS</a></li>
+                                    <li class="megamenu__item"><a href="#">BLACK CROWS</a></li>
+                                    <li class="megamenu__item"><a href="#">BLACK CROWS</a></li>
+                                    <li class="megamenu__item"><a href="#">BLACK CROWS</a></li>
+                                    <li class="megamenu__item"><a href="#">BLACK CROWS</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-nav__item">
+                    <a href="" class="main-nav__link">Shop by collection</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="" class="main-nav__link">About Koibird</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="" class="main-nav__link">Pop-up shop</a>
+                </li>
+            </ul> 
+        </nav>
+    </div>
+
+</header>
+
+<div class="mobile-nav">
+
+    <div class="mobile-nav__close burger-toggle">
+        <svg height="1.8rem" viewBox="0 0 329.26933 329" width="1.8rem" xmlns="http://www.w3.org/2000/svg"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/>
+        </svg>
+    </div>
+
+    <div class="mobile-nav__content">
+
+        <nav class="main-nav">
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">Shop by category</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="" class="main-nav__link">Shop by brand</a>
+                    <div class="main-nav__sub-megamenu">
+                        <div class="megamenu">
+                            
+                        </div>
+                    </div>
+                </li>
+                <li class="main-nav__item">
+                    <a href="" class="main-nav__link">Shop by collection</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="" class="main-nav__link">About Koibird</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="" class="main-nav__link">Pop-up shop</a>
+                </li>
+            </ul> 
+        </nav>
+    
+        <form class="search">
+            <input class="search__input" type="search" placeholder="">
+            <button class="search__button" type="submit">
+                <svg class="search__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <path id="SEARCH_ICON" data-name="SEARCH ICON" d="M19.848,19.113l-5.691-5.461a7.683,7.683,0,0,0,2.49-5.666A8.217,8.217,0,0,0,8.323,0,8.126,8.126,0,0,0,0,7.986a8.126,8.126,0,0,0,8.323,7.986,8.327,8.327,0,0,0,4.98-1.638l5.762,5.529a.532.532,0,0,0,.711,0A.475.475,0,0,0,19.848,19.113ZM1.067,7.986A7.144,7.144,0,0,1,8.323,1.024,7.144,7.144,0,0,1,15.58,7.986a7.144,7.144,0,0,1-7.256,6.962A7.189,7.189,0,0,1,1.067,7.986Z" fill="#231f20"/>
+                </svg>
+            </button>
+        </form>
+    
+        <div class="login">
+            <a href="#" class="login__link">Register</a><span>|</span><a href="#" class="login__link">My Account</a>
+        </div>
+
+    </div>
+
+</div>
+
+<section class="hero js-scroll">
+
+    <div class="container">
+        <div class="hero__content">
+            <img src="/images/brand.png" srcset="/images/brand.png 1x, /images/brand2x.png 2x" alt="Koibird Logo" class="hero__logo">
+            <br>
+            <a class="hero__desc" href="#">
+                BEAUTY AND THE PISTE
+            </a>
+        </div>
+    </div>
+
+</section>
+
+<div class="shop-title">
+    <p class="shop-title__text">WHAT WE ARE SHOPPING NOW</p>
+</div>
+
+<section class="products-slider js-scroll">
+    <div class="products-slider__title"><div>New in</div></div>
+    <div class="container">
+        <div class="products-slider__main" id="products-slider-1">
+            <div class="products-slider__arrow products-slider__arrow--left"><i class="fas fa-chevron-left"></i></div>
+            <div class="products-slider__items">
+                <!-- loop start -->
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <a href="#">
+                            <img src="./images/carousel/slide-1.jpg" srcset="./images/carousel/slide-1.jpg 1x, ./images/carousel/slide-1@2x.jpg 2x" alt="BLACK JACKET">
+                        </a>
+                        <div class="product-card__white-list">
+                            <i class="far fa-heart"></i>                      
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <div class="product-card__name">
+                            <a href="#">Black jacket</a>
+                        </div>
+                        <div class="product-card__brand">
+                            <a href="#">Gucci</a>
+                        </div>
+                        <div class="product-card__price">£000</div>
+                        <button class="product-card__button">SHOP NOW</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <a href="#">
+                            <img src="./images/carousel/slide-2.jpg" srcset="./images/carousel/slide-2.jpg 1x, ./images/carousel/slide-2@2x.jpg 2x" alt="BLACK JACKET">
+                        </a>
+                        <div class="product-card__white-list">
+                            <i class="far fa-heart"></i>                      
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <div class="product-card__name">
+                            <a href="#">Black jacket</a>
+                        </div>
+                        <div class="product-card__brand">
+                            <a href="#">Gucci</a>
+                        </div>
+                        <div class="product-card__price">£000</div>
+                        <button class="product-card__button">SHOP NOW</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <a href="#">
+                            <img src="./images/carousel/slide-3.jpg" srcset="./images/carousel/slide-3.jpg 1x, ./images/carousel/slide-3@2x.jpg 2x" alt="BLACK JACKET">
+                        </a>
+                        <div class="product-card__white-list">
+                            <i class="far fa-heart"></i>                      
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <div class="product-card__name">
+                            <a href="#">Black jacket</a>
+                        </div>
+                        <div class="product-card__brand">
+                            <a href="#">Gucci</a>
+                        </div>
+                        <div class="product-card__price">£000</div>
+                        <button class="product-card__button">SHOP NOW</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <a href="#">
+                            <img src="./images/carousel/slide-4.jpg" srcset="./images/carousel/slide-4.jpg 1x, ./images/carousel/slide-4@2x.jpg 2x" alt="BLACK JACKET">
+                        </a>
+                        <div class="product-card__white-list">
+                            <i class="far fa-heart"></i>                      
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <div class="product-card__name">
+                            <a href="#">Black jacket</a>
+                        </div>
+                        <div class="product-card__brand">
+                            <a href="#">Gucci</a>
+                        </div>
+                        <div class="product-card__price">£000</div>
+                        <button class="product-card__button">SHOP NOW</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <a href="#">
+                            <img src="./images/carousel/slide-1.jpg" srcset="./images/carousel/slide-1.jpg 1x, ./images/carousel/slide-1@2x.jpg 2x" alt="BLACK JACKET">
+                        </a>
+                        <div class="product-card__white-list">
+                            <i class="far fa-heart"></i>                      
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <div class="product-card__name">
+                            <a href="#">Black jacket</a>
+                        </div>
+                        <div class="product-card__brand">
+                            <a href="#">Gucci</a>
+                        </div>
+                        <div class="product-card__price">£000</div>
+                        <button class="product-card__button">SHOP NOW</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <a href="#">
+                            <img src="./images/carousel/slide-2.jpg" srcset="./images/carousel/slide-2.jpg 1x, ./images/carousel/slide-2@2x.jpg 2x" alt="BLACK JACKET">
+                        </a>
+                        <div class="product-card__white-list">
+                            <i class="far fa-heart"></i>                      
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <div class="product-card__name">
+                            <a href="#">Black jacket</a>
+                        </div>
+                        <div class="product-card__brand">
+                            <a href="#">Gucci</a>
+                        </div>
+                        <div class="product-card__price">£000</div>
+                        <button class="product-card__button">SHOP NOW</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <a href="#">
+                            <img src="./images/carousel/slide-3.jpg" srcset="./images/carousel/slide-3.jpg 1x, ./images/carousel/slide-3@2x.jpg 2x" alt="BLACK JACKET">
+                        </a>
+                        <div class="product-card__white-list">
+                            <i class="far fa-heart"></i>                      
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <div class="product-card__name">
+                            <a href="#">Black jacket</a>
+                        </div>
+                        <div class="product-card__brand">
+                            <a href="#">Gucci</a>
+                        </div>
+                        <div class="product-card__price">£000</div>
+                        <button class="product-card__button">SHOP NOW</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <a href="#">
+                            <img src="./images/carousel/slide-4.jpg" srcset="./images/carousel/slide-4.jpg 1x, ./images/carousel/slide-4@2x.jpg 2x" alt="BLACK JACKET">
+                        </a>
+                        <div class="product-card__white-list">
+                            <i class="far fa-heart"></i>                      
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <div class="product-card__name">
+                            <a href="#">Black jacket</a>
+                        </div>
+                        <div class="product-card__brand">
+                            <a href="#">Gucci</a>
+                        </div>
+                        <div class="product-card__price">£000</div>
+                        <button class="product-card__button">SHOP NOW</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <a href="#">
+                            <img src="./images/carousel/slide-4.jpg" srcset="./images/carousel/slide-4.jpg 1x, ./images/carousel/slide-4@2x.jpg 2x" alt="BLACK JACKET">
+                        </a>
+                        <div class="product-card__white-list">
+                            <i class="far fa-heart"></i>                      
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <div class="product-card__name">
+                            <a href="#">Black jacket</a>
+                        </div>
+                        <div class="product-card__brand">
+                            <a href="#">Gucci</a>
+                        </div>
+                        <div class="product-card__price">£000</div>
+                        <button class="product-card__button">SHOP NOW</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <a href="#">
+                            <img src="./images/carousel/slide-4.jpg" srcset="./images/carousel/slide-4.jpg 1x, ./images/carousel/slide-4@2x.jpg 2x" alt="BLACK JACKET">
+                        </a>
+                        <div class="product-card__white-list">
+                            <i class="far fa-heart"></i>                      
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <div class="product-card__name">
+                            <a href="#">Black jacket</a>
+                        </div>
+                        <div class="product-card__brand">
+                            <a href="#">Gucci</a>
+                        </div>
+                        <div class="product-card__price">£000</div>
+                        <button class="product-card__button">SHOP NOW</button>
+                    </div>
+                </div>
+                <!-- loop end -->
+            </div>
+            <div class="products-slider__arrow products-slider__arrow--right"><i class="fas fa-chevron-right"></i></div>
+        </div>
+    </div>
+</section>
+
+<section class="categories">
+
+    <div class="container">
+
+        <div class="categories__row">
+
+        <!-- loop start -->
+        <div class="categories__col js-scroll">
+            <div class="category-card">
+                <img class="category-card__image" src="./images/cats/cat1.jpg" srcset="./images/cats/cat1.jpg 1x, ./images/cats/cat1@2x.jpg 2x" alt="Category Image" >
+                <a href="#" class="category-card__link"></a>
+                <div class="category-card__content">
+                    <p class="category-card__name">OUTERWEAR</p>
+                    <span class="category-card__button">SHOP NOW <i class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="categories__col js-scroll">
+            <div class="category-card">
+                <img class="category-card__image" src="./images/cats/cat2.jpg" srcset="./images/cats/cat2.jpg 1x, ./images/cats/cat2@2x.jpg 2x" alt="Category Image" >
+                <a href="#" class="category-card__link"></a>
+                <div class="category-card__content">
+                    <p class="category-card__name">SKIS</p>
+                    <span class="category-card__button">SHOP NOW <i class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="categories__col js-scroll">
+            <div class="category-card">
+                <img class="category-card__image" src="./images/cats/cat3.jpg" srcset="./images/cats/cat3.jpg 1x, ./images/cats/cat3@2x.jpg 2x" alt="Category Image" >
+                <a href="#" class="category-card__link"></a>
+                <div class="category-card__content">
+                    <p class="category-card__name">KNITWEAR</p>
+                    <span class="category-card__button">SHOP NOW <i class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="categories__col js-scroll">
+            <div class="category-card">
+                <img class="category-card__image" src="./images/cats/cat4.jpg" srcset="./images/cats/cat4.jpg 1x, ./images/cats/cat4@2x.jpg 2x" alt="Category Image" >
+                <a href="#" class="category-card__link"></a>
+                <div class="category-card__content">
+                    <p class="category-card__name">ACCESSORIES</p>
+                    <span class="category-card__button">SHOP NOW <i class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="categories__col js-scroll">
+            <div class="category-card">
+                <img class="category-card__image" src="./images/cats/cat5.jpg" srcset="./images/cats/cat5.jpg 1x, ./images/cats/cat5@2x.jpg 2x" alt="Category Image" >
+                <a href="#" class="category-card__link"></a>
+                <div class="category-card__content">
+                    <p class="category-card__name">GOGGLES</p>
+                    <span class="category-card__button">SHOP NOW <i class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="categories__col js-scroll">
+            <div class="category-card">
+                <img class="category-card__image" src="./images/cats/cat6.jpg" srcset="./images/cats/cat6.jpg 1x, ./images/cats/cat6@2x.jpg 2x" alt="Category Image" >
+                <a href="#" class="category-card__link"></a>
+                <div class="category-card__content">
+                    <p class="category-card__name">JACKETS</p>
+                    <span class="category-card__button">SHOP NOW <i class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+        </div>
+        <!-- loop end -->
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="products-slider js-scroll">
+    <div class="products-slider__title"><div>BEST SELLERS</div></div>
+    <div class="container">
+        <div class="products-slider__main" id="products-slider-2">
+            <div class="products-slider__arrow products-slider__arrow--left"><i class="fas fa-chevron-left"></i></div>
+            <div class="products-slider__items">
+                <!-- loop start -->
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <a href="#">
+                            <img src="./images/best/best1.jpg" srcset="./images/best/best1.jpg 1x, ./images/best/best1@2x.jpg 2x" alt="BLACK JACKET">
+                        </a>
+                        <div class="product-card__white-list">
+                            <i class="far fa-heart"></i>                      
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <div class="product-card__name">
+                            <a href="#">Black jacket</a>
+                        </div>
+                        <div class="product-card__brand">
+                            <a href="#">Gucci</a>
+                        </div>
+                        <div class="product-card__price">£000</div>
+                        <button class="product-card__button">SHOP NOW</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <a href="#">
+                            <img src="./images/best/best2.jpg" srcset="./images/best/best2.jpg 1x, ./images/best/best2@2x.jpg 2x" alt="BLACK JACKET">
+                        </a>
+                        <div class="product-card__white-list">
+                            <i class="far fa-heart"></i>                      
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <div class="product-card__name">
+                            <a href="#">Black jacket</a>
+                        </div>
+                        <div class="product-card__brand">
+                            <a href="#">Gucci</a>
+                        </div>
+                        <div class="product-card__price">£000</div>
+                        <button class="product-card__button">SHOP NOW</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <a href="#">
+                            <img src="./images/best/best3.jpg" srcset="./images/best/best3.jpg 1x, ./images/best/best3@2x.jpg 2x" alt="BLACK JACKET">
+                        </a>
+                        <div class="product-card__white-list">
+                            <i class="far fa-heart"></i>                      
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <div class="product-card__name">
+                            <a href="#">Black jacket</a>
+                        </div>
+                        <div class="product-card__brand">
+                            <a href="#">Gucci</a>
+                        </div>
+                        <div class="product-card__price">£000</div>
+                        <button class="product-card__button">SHOP NOW</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <a href="#">
+                            <img src="./images/best/best4.jpg" srcset="./images/best/best4.jpg 1x, ./images/best/best4@2x.jpg 2x" alt="BLACK JACKET">
+                        </a>
+                        <div class="product-card__white-list">
+                            <i class="far fa-heart"></i>                      
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <div class="product-card__name">
+                            <a href="#">Black jacket</a>
+                        </div>
+                        <div class="product-card__brand">
+                            <a href="#">Gucci</a>
+                        </div>
+                        <div class="product-card__price">£000</div>
+                        <button class="product-card__button">SHOP NOW</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <a href="#">
+                            <img src="./images/best/best1.jpg" srcset="./images/best/best1.jpg 1x, ./images/best/best1@2x.jpg 2x" alt="BLACK JACKET">
+                        </a>
+                        <div class="product-card__white-list">
+                            <i class="far fa-heart"></i>                      
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <div class="product-card__name">
+                            <a href="#">Black jacket</a>
+                        </div>
+                        <div class="product-card__brand">
+                            <a href="#">Gucci</a>
+                        </div>
+                        <div class="product-card__price">£000</div>
+                        <button class="product-card__button">SHOP NOW</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <a href="#">
+                            <img src="./images/best/best2.jpg" srcset="./images/best/best2.jpg 1x, ./images/best/best2@2x.jpg 2x" alt="BLACK JACKET">
+                        </a>
+                        <div class="product-card__white-list">
+                            <i class="far fa-heart"></i>                      
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <div class="product-card__name">
+                            <a href="#">Black jacket</a>
+                        </div>
+                        <div class="product-card__brand">
+                            <a href="#">Gucci</a>
+                        </div>
+                        <div class="product-card__price">£000</div>
+                        <button class="product-card__button">SHOP NOW</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <a href="#">
+                            <img src="./images/best/best3.jpg" srcset="./images/best/best3.jpg 1x, ./images/best/best3@2x.jpg 2x" alt="BLACK JACKET">
+                        </a>
+                        <div class="product-card__white-list">
+                            <i class="far fa-heart"></i>                      
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <div class="product-card__name">
+                            <a href="#">Black jacket</a>
+                        </div>
+                        <div class="product-card__brand">
+                            <a href="#">Gucci</a>
+                        </div>
+                        <div class="product-card__price">£000</div>
+                        <button class="product-card__button">SHOP NOW</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <a href="#">
+                            <img src="./images/best/best4.jpg" srcset="./images/best/best4.jpg 1x, ./images/best/best4@2x.jpg 2x" alt="BLACK JACKET">
+                        </a>
+                        <div class="product-card__white-list">
+                            <i class="far fa-heart"></i>                      
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <div class="product-card__name">
+                            <a href="#">Black jacket</a>
+                        </div>
+                        <div class="product-card__brand">
+                            <a href="#">Gucci</a>
+                        </div>
+                        <div class="product-card__price">£000</div>
+                        <button class="product-card__button">SHOP NOW</button>
+                    </div>
+                </div>
+                <!-- loop end -->
+            </div>
+            <div class="products-slider__arrow products-slider__arrow--right"><i class="fas fa-chevron-right"></i></div>
+        </div>
+    </div>
+</section>
+
+<section class="insta-feed js-scroll">
+
+    <div class="insta-feed__hashtag">#KOISKI</div>
+
+    <!-- loop start -->
+    <div class="insta-feed__row">
+    
+        <div class="insta-feed__col">
+            <div class="insta-feed__card">
+                <img class="insta-feed__image" src="./images/insta-feed/insta (1).jpg" alt="Category Image" >
+                <div class="insta-feed__content">
+                    <a class="insta-feed__link" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="insta-feed__link insta-feed__link--hoverable" href="#">Shop the look <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>  
+        </div>
+    
+        <div class="insta-feed__col">
+            <div class="insta-feed__card">
+                <img class="insta-feed__image" src="./images/insta-feed/insta (2).jpg" alt="Category Image" >
+                <div class="insta-feed__content">
+                    <a class="insta-feed__link" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="insta-feed__link insta-feed__link--hoverable" href="#">Shop the look <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>  
+        </div>
+    
+        <div class="insta-feed__col">
+            <div class="insta-feed__card">
+                <img class="insta-feed__image" src="./images/insta-feed/insta (3).jpg" alt="Category Image" >
+                <div class="insta-feed__content">
+                    <a class="insta-feed__link" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="insta-feed__link insta-feed__link--hoverable" href="#">Shop the look <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>  
+        </div>
+    
+        <div class="insta-feed__col">
+            <div class="insta-feed__card">
+                <img class="insta-feed__image" src="./images/insta-feed/insta (4).jpg" alt="Category Image" >
+                <div class="insta-feed__content">
+                    <a class="insta-feed__link" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="insta-feed__link insta-feed__link--hoverable" href="#">Shop the look <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>  
+        </div>
+    
+        <div class="insta-feed__col">
+            <div class="insta-feed__card">
+                <img class="insta-feed__image" src="./images/insta-feed/insta (5).jpg" alt="Category Image" >
+                <div class="insta-feed__content">
+                    <a class="insta-feed__link" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="insta-feed__link insta-feed__link--hoverable" href="#">Shop the look <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>  
+        </div>
+    
+        <div class="insta-feed__col">
+            <div class="insta-feed__card">
+                <img class="insta-feed__image" src="./images/insta-feed/insta (6).jpg" alt="Category Image" >
+                <div class="insta-feed__content">
+                    <a class="insta-feed__link" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="insta-feed__link insta-feed__link--hoverable" href="#">Shop the look <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>  
+        </div>
+    
+        <div class="insta-feed__col">
+            <div class="insta-feed__card">
+                <img class="insta-feed__image" src="./images/insta-feed/insta (7).jpg" alt="Category Image" >
+                <div class="insta-feed__content">
+                    <a class="insta-feed__link" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="insta-feed__link insta-feed__link--hoverable" href="#">Shop the look <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>  
+        </div>
+    
+        <div class="insta-feed__col">
+            <div class="insta-feed__card">
+                <img class="insta-feed__image" src="./images/insta-feed/insta (8).jpg" alt="Category Image" >
+                <div class="insta-feed__content">
+                    <a class="insta-feed__link" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="insta-feed__link insta-feed__link--hoverable" href="#">Shop the look <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>  
+        </div>
+    
+        <div class="insta-feed__col">
+            <div class="insta-feed__card">
+                <img class="insta-feed__image" src="./images/insta-feed/insta (9).jpg" alt="Category Image" >
+                <div class="insta-feed__content">
+                    <a class="insta-feed__link" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="insta-feed__link insta-feed__link--hoverable" href="#">Shop the look <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>  
+        </div>
+    
+        <div class="insta-feed__col">
+            <div class="insta-feed__card">
+                <img class="insta-feed__image" src="./images/insta-feed/insta (10).jpg" alt="Category Image" >
+                <div class="insta-feed__content">
+                    <a class="insta-feed__link" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="insta-feed__link insta-feed__link--hoverable" href="#">Shop the look <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>  
+        </div>
+    
+        <div class="insta-feed__col">
+            <div class="insta-feed__card">
+                <img class="insta-feed__image" src="./images/insta-feed/insta (11).jpg" alt="Category Image" >
+                <div class="insta-feed__content">
+                    <a class="insta-feed__link" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="insta-feed__link insta-feed__link--hoverable" href="#">Shop the look <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>  
+        </div>
+    
+        <div class="insta-feed__col">
+            <div class="insta-feed__card">
+                <img class="insta-feed__image" src="./images/insta-feed/insta (12).jpg" alt="Category Image" >
+                <div class="insta-feed__content">
+                    <a class="insta-feed__link" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="insta-feed__link insta-feed__link--hoverable" href="#">Shop the look <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>  
+        </div>
+    
+    </div>
+    <!-- loop end -->
+
+</section>
+
+<footer class="footer js-scroll">
+    <div class="container">
+        <div class="footer__row">
+            <div class="footer__left">
+                <div class="footer__logo-wrap">
+                    <a class="footer__logo" href="/">
+                        <img class="logo" src="./images/logo.svg" alt="Brand Logo">
+                    </a>
+                </div>
+                <nav class="secondary-nav">
+                    <ul class="secondary__list">
+                        <li class="secondary__item">
+                            <a href="#" class="secondary__link">About</a>
+                        </li>
+                        <li class="secondary__item">
+                            <a href="#" class="secondary__link">Terms & conditions</a>
+                        </li>
+                        <li class="secondary__item">
+                            <a href="#" class="secondary__link">Privacy policy</a>
+                        </li>
+                        <li class="secondary__item">
+                            <a href="#" class="secondary__link">Contact us</a>
+                        </li>
+                    </ul> 
+                </nav>
+
+            </div>
+            <div class="footer__right">
+                <div class="newsletter">
+                    <p class="newsletter__title">SIGN UP FOR OUR NEWSLETTER</p>
+                    <form class="newsletter__form">
+                        <input type="email" class="newsletter__input" placeholder="">
+                        <label class="newsletter__label">
+                            <input class="newsletter__checkbox" name="name" type="checkbox" value="1" required=""> <span class="checkmark"></span>GDPR tick box GDPR tick box GDPR tick box GDPR tick box GDPR tick box 
+                        </label>
+                        <button class="newsletter__btn" type="submit">Submit ></bu tton>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/app.min.js"></script>
+
+</body>
+</html>

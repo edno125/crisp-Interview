@@ -23,4 +23,44 @@ document.querySelectorAll('.burger-toggle').forEach(item => {
 });
 
 
+//Animate
 
+setTimeout(()=>{
+    const scrollOffset = 200;
+ 
+    const scrollElement = document.querySelectorAll(".js-scroll");
+    
+    scrollElement.forEach(item => {
+        const elementInView = (el, offset = 0) => {
+            const elementTop = el.getBoundingClientRect().top;
+           
+            return (
+              elementTop <= 
+              ((window.innerHeight || document.documentElement.clientHeight) - offset)
+            );
+          };
+           
+          const displayScrollElement = () => {
+              item.classList.add('scrolled');
+          }
+           
+          const hideScrollElement = () => {
+              item.classList.remove('scrolled');
+          }
+           
+          const handleScrollAnimation = () => {
+            if (elementInView(item, scrollOffset)) {
+                displayScrollElement();
+            } else {
+              hideScrollElement();
+            }
+          }
+          
+          handleScrollAnimation();
+          window.addEventListener('scroll', () => {
+            handleScrollAnimation();
+          });
+    });
+
+    
+}, 1500)
